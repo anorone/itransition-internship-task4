@@ -1,12 +1,14 @@
 import TextInput from './TextInput.js';
 import PasswordInput from './PasswordInput.js';
+import FormButton from './FormButton.js';
 
-function Form({ heading }) {
+function Form({ purpose }) {
   return (
-    <form>
-      <h2 className="heading">{heading}</h2>
+    <form className="entry-form">
+      <h2 className="heading">{purpose}</h2>
       <TextInput />
       <PasswordInput />
+      <FormButton text={purpose} />
     </form>
   );
 }
