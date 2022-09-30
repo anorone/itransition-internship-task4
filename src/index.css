@@ -27,14 +27,30 @@ body {
   margin: 0;
   margin-bottom: 10px;
   font-size: 64px;
+  text-align: center;
 }
 
 .box {
   display: flex;
+  column-gap: 25px;
   box-sizing: border-box;
   width: 100%;
   padding: 25px;
   border: 1px solid #333;
   border-radius: 15px;
   overflow: hidden;
+}
+
+.entry-form {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+}
+
+.btn-group {
+  width: max-content;
+  margin-top: 10px;
+  margin-left: auto;
 }
